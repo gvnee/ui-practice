@@ -21,7 +21,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### Links
 
-- Solution URL: [solution](https://github.com/gvnee/ui-practice/sunnyside)
+- Solution URL: [solution](https://github.com/gvnee/ui-practice/tree/main/sunnyside)
 - Live Site URL: [live site](https://gvnee.github.io/ui-practice/sunnyside)
 
 ## My process
