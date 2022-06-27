@@ -1,0 +1,28 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #34344A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    background-color: #CC5A71;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0px 20PX 5px rgba(255, 255, 255, 0.107);
+    transition-duration: 300ms;
+}
+a:hover{
+    filter: saturate(1.5);
+}
