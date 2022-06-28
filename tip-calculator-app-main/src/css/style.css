@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: hsl(185deg, 41%, 84%);
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+
+main {
+  background-color: white;
+  width: 60%;
+  max-width: 60rem;
+  border-radius: 2.5rem;
+  display: flex;
+}
+main .left, main .right {
+  width: 50%;
+  margin: 2rem;
+}
+main .left {
+  display: flex;
+  flex-direction: column;
+}
+main .left label {
+  font: inherit;
+  color: hsl(186deg, 14%, 43%);
+}
+main .left img {
+  position: absolute;
+}
+main .left input {
+  -moz-appearance: textfield;
+  width: 99%;
+  border: none;
+  background-color: hsl(189deg, 41%, 97%);
+}
+main .right {
+  border-radius: 1rem;
+  padding: 2.5rem;
+  background-color: hsl(183deg, 100%, 15%);
+}
+
+input {
+  font: inherit;
+  color: hsl(183deg, 100%, 15%);
+  font-size: 2.4rem;
+}

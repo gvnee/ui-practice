@@ -1,0 +1,60 @@
+@use 'variables' as *;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+body{
+    background-color: $lightgrayishcyan;
+    font-weight: 700;
+    font-family: $space-mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+main{
+    background-color: white;
+    width: 60%;
+    max-width: 60rem;
+    border-radius: 2.5rem;
+    display: flex;
+    .left, .right{
+        width: 50%;
+        margin: 2rem;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        label{
+            font: inherit;
+            color: $darkgrayishcyan;
+        }
+        img{
+            position: absolute;
+        }
+        input{
+            -moz-appearance: textfield;
+            width: 99%;
+            border: none;
+            background-color: $verylightgrayishcyan;
+        }
+    }
+    .right{
+        border-radius: 1rem;
+        padding: 2.5rem;
+        background-color: $verydarkcyan;
+    }
+}
+
+input{
+    font:inherit;
+    color: $verydarkcyan;
+    font-size: 2.4rem;
+}
