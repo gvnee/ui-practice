@@ -1,0 +1,90 @@
+@use 'variable' as *;
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-family: 'Overpass', sans-serif;
+    min-height: 100vh;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+    max-width: 38rem;
+    min-height: 38rem;
+    width: 40%;
+    flex-direction: column;
+    // background-color: #171E28;
+    background: radial-gradient(at top, #1d2633 0%, rgba(23,30,40,1) 50%);
+    padding: 3rem;
+    border-radius: 3rem;
+    img{
+        background-color: $blue;
+        align-self: flex-start;
+        padding: 1rem;
+        border-radius: 50%;
+        margin-bottom: 3rem;
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 2.5rem;
+    }
+    p{
+        color: $lightgrey;
+        margin: 0;
+    }
+    .rating-container{
+        display: flex;
+        justify-content: space-between;
+        .rating{
+            border-radius: 50%;
+            background-color:$blue;
+            width: 4.5rem;
+            height: 4.5rem;
+            text-align: center;
+            vertical-align: center;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: $lightgrey;
+            transition-duration: 300ms;
+            &:hover{
+                background-color: $lightgrey;
+                color: white;
+            }
+        }
+    }
+    button{
+        background-color: $orange;
+        padding: 1.2rem 0;
+        border-radius: 2rem;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+        transition-duration: 300ms;
+        &:hover{
+            color: orange;
+            background-color: white;
+        }
+    }
+}
+.active{
+    background-color: orange;
+    color: white;
+}

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  max-width: 38rem;
+  min-height: 38rem;
+  width: 40%;
+  flex-direction: column;
+  background: radial-gradient(at top, #1d2633 0%, rgb(23, 30, 40) 50%);
+  padding: 3rem;
+  border-radius: 3rem;
+}
+.container img {
+  background-color: hsl(213deg, 19%, 18%);
+  align-self: flex-start;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+.container h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2.5rem;
+}
+.container p {
+  color: hsl(217deg, 12%, 63%);
+  margin: 0;
+}
+.container .rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .rating-container .rating {
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 18%);
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: hsl(217deg, 12%, 63%);
+  transition-duration: 300ms;
+}
+.container .rating-container .rating:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: white;
+}
+.container button {
+  background-color: hsl(25deg, 97%, 53%);
+  padding: 1.2rem 0;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.container button:hover {
+  color: orange;
+  background-color: white;
+}
+
+.active {
+  background-color: orange;
+  color: white;
+}
