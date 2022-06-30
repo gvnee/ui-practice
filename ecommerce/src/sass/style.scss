@@ -1,0 +1,230 @@
+@use 'variable' as *;
+
+*,
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    // min-width: 100vw;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.6rem;
+    max-width: 100rem;
+    margin: auto;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray1;
+}
+    .navbar-link-container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        margin-right: 2rem;
+    }
+
+    .navbar-link{
+        height: 100%;
+        display: block;
+        text-decoration: none;
+        color: $gray2;
+        padding: 3rem 1.5rem;
+        transition: 300ms;
+        border-bottom: 5px solid rgba(255, 255, 255, 0);
+        &:hover{
+            border-bottom: 5px solid $orange;
+            color: $dark;
+        }
+    }
+
+    
+  .navbar-rightside{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+  }
+
+        .cart{
+            cursor: pointer;
+        }
+
+        .cart-dropdown{
+            position: absolute;
+            top: 8rem;
+            background-color: white;
+            box-shadow: 0 2rem 2rem 0.5rem rgba(0, 0, 0, 0.141);
+            border-radius: 0.5rem;
+            width: 30rem;
+            height: 20rem;
+            right: 10rem;
+        }
+
+        .avatar{
+            width: 5rem;
+            border-radius: 50%;
+            &:hover{
+                border: 1px solid $orange;
+            }
+      }
+
+
+
+
+main{
+    display: flex;
+}
+
+    .gallery,
+    .product-description{
+        width: 50%;
+        padding: 5rem;
+    }
+
+
+        .main-image{
+            width: 100%;
+            border-radius: 2rem;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+        }
+
+        .image-slider{
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+            .preview{
+                width: 25%;
+                border-radius: 1rem;
+                transition: 300ms;
+                cursor: pointer;
+                &:hover{
+                    filter: opacity(0.6);
+                }
+            }
+    
+    
+    
+    .sneaker-company{
+        margin-top: 5rem;
+        color: $orange;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        font-weight: 700;
+    }
+
+    h1{
+        color: $dark;
+        font-size: 3.5rem;
+    }
+
+    .description-text{
+        color: $gray2;
+    }
+
+    .prices{
+        width: 40%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+
+        .current-price{
+            font-size: 2.5rem;
+        }
+        .sale-percent{
+            color: $orange;
+            background-color: $paleOrange;
+            padding: auto;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border-radius: 0.5rem;
+        }
+
+        .original-price{
+            color: $gray1;
+            text-decoration: line-through;
+        }
+    
+    .add-to-card-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+    }
+
+        .quantity-container{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: $gray0;
+            align-items: center;
+            border-radius: 0.5rem;
+        }
+            .minus-button,
+            .plus-button,
+            .quantity{
+
+                font-weight: bold;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5rem;
+                //won't fuck up border radius
+                overflow: hidden;
+                transition-duration: 300ms;
+            }
+            .minus-button,
+            .plus-button{
+                cursor: pointer;
+                &:hover{
+                    filter: opacity(0.5);
+                }
+            }
+    
+    button{
+        background-color: $orange;
+        border: none;
+        color: white;
+        border-radius: 1rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 300ms;
+        box-shadow: 0px 10px 20px 0px hsla(26, 100%, 55%, 0.467);
+        img{
+            filter: brightness(0) invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(101%) contrast(104%);
+            width: 1.5rem;
+            margin-right: 1.5rem;
+        }
+        &:hover{
+            filter: opacity(0.8);
+        }
+    }
+
+
+.hidden{
+    // display: none;
+    width: 0;
+    opacity: 0;
+}
+#selectedTumbnail{
+    border: 3px solid $orange;
+    filter: brightness(0.5);
+}

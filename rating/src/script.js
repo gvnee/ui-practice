@@ -17,10 +17,12 @@ const submit = document.querySelector("#submit");
 
 submit.addEventListener("click", e => {
 
-  document.querySelector(".rate").classList.add("none");
-  document.querySelector(".thanks").classList.remove("none");
-
-  const a = document.querySelector(".final-rating");
-  a.textContent = "You selected " + ratingNumber + " out of 5";
-
+  const active = document.getElementById("active");
+  if(active !== null){
+    document.querySelector(".rate").classList.add("none");
+    document.querySelector(".thanks").classList.remove("none");
+  
+    const a = document.querySelector(".final-rating");
+    a.textContent = "You selected " + ratingNumber + " out of 5";
+  }
 });
