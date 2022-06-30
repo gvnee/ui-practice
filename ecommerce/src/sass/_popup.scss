@@ -1,0 +1,34 @@
+.popup-preview{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top:  0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.close-button{
+    color: red;
+    float: right;
+}
+.popup-main{
+    width: 30%;
+}
+.popup-image{
+    width: 100%;
+    border-radius: 1rem;
+}
+.popup-tumbnails{
+    display: flex;
+    width: 30%;
+
+}
+.popup-tumbnail{
+    width: 25%;
+    margin: 1.5rem;
+    border-radius: 0.6rem;
+}

@@ -1,4 +1,5 @@
 @use 'variable' as *;
+@use '_popup' as *;
 
 *,
 *::before, *::after{
@@ -69,7 +70,26 @@ header{
             width: 30rem;
             height: 20rem;
             right: 10rem;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-weight: 700;
+                border-bottom: 1px solid $gray0;
+                padding: 2rem;
+                margin: 0;
+            }
+
+            .inCart{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 15rem;
+                color: $gray2;
+                font-weight: 700;
+                // height: 100%;
+            }
         }
+
 
         .avatar{
             width: 5rem;
@@ -220,9 +240,9 @@ main{
 
 
 .hidden{
-    // display: none;
-    width: 0;
-    opacity: 0;
+    display: none;
+    // width: 0;
+    // opacity: 0;
 }
 #selectedTumbnail{
     border: 3px solid $orange;

@@ -32,4 +32,10 @@ for(let i = 0;i<smollImages.length;i++){
     });
 }
 
-// console.log(bigImages);
+//cart dropdown
+const cartButton = document.getElementById("cartButton");
+const cartDropdown = document.getElementById("cart-dropdown");
+
+cartButton.addEventListener("click", e => {
+    cartDropdown.classList.toggle("hidden");
+});

@@ -1,4 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.popup-preview {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.close-button {
+  color: red;
+  float: right;
+}
+
+.popup-main {
+  width: 30%;
+}
+
+.popup-image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.popup-tumbnails {
+  display: flex;
+  width: 30%;
+}
+
+.popup-tumbnail {
+  width: 25%;
+  margin: 1.5rem;
+  border-radius: 0.6rem;
+}
+
 *,
 *::before, *::after {
   box-sizing: border-box;
@@ -67,6 +106,22 @@ header {
   width: 30rem;
   height: 20rem;
   right: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.cart-dropdown p {
+  font-weight: 700;
+  border-bottom: 1px solid hsl(223deg, 64%, 98%);
+  padding: 2rem;
+  margin: 0;
+}
+.cart-dropdown .inCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  color: hsl(219deg, 9%, 45%);
+  font-weight: 700;
 }
 
 .avatar {
@@ -214,8 +269,7 @@ button:hover {
 }
 
 .hidden {
-  width: 0;
-  opacity: 0;
+  display: none;
 }
 
 #selectedTumbnail {
