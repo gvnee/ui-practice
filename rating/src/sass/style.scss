@@ -1,4 +1,5 @@
 @use 'variable' as *;
+
 *, *::after, *::before{
     box-sizing: border-box;
 }
@@ -18,17 +19,19 @@ body{
 }
 
 .container{
+    
     display: flex;
     gap: 2rem;
     max-width: 38rem;
     min-height: 38rem;
     width: 40%;
+    min-width: 34rem;
     flex-direction: column;
     // background-color: #171E28;
     background: radial-gradient(at top, #1d2633 0%, rgba(23,30,40,1) 50%);
     padding: 3rem;
     border-radius: 3rem;
-    img{
+    .star-icon{
         background-color: $blue;
         align-self: flex-start;
         padding: 1rem;
@@ -48,25 +51,7 @@ body{
     .rating-container{
         display: flex;
         justify-content: space-between;
-        .rating{
-            border-radius: 50%;
-            background-color:$blue;
-            width: 4.5rem;
-            height: 4.5rem;
-            text-align: center;
-            vertical-align: center;
-            font-weight: 700;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            color: $lightgrey;
-            transition-duration: 300ms;
-            &:hover{
-                background-color: $lightgrey;
-                color: white;
-            }
-        }
+
     }
     button{
         background-color: $orange;
@@ -79,12 +64,52 @@ body{
         cursor: pointer;
         transition-duration: 300ms;
         &:hover{
-            color: orange;
+            color: $orange;
             background-color: white;
         }
     }
 }
-.active{
-    background-color: orange;
+.rating{
+    border-radius: 50%;
+    background-color:$blue;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+    vertical-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: $lightgrey;
+    transition-duration: 300ms;
+    &:hover{
+        background-color: $lightgrey;
+        color: white;
+    }
+}
+
+.thanks{
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50%;
+    }
+    .final-rating{
+        color: $orange;
+        background-color: $blue;
+        padding: 0.8rem 1.2rem;
+        border-radius: 2rem;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+#active{
+    background-color: $orange;
     color: white;
+}
+.none{
+    display: none;
 }

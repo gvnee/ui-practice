@@ -25,12 +25,13 @@ body {
   max-width: 38rem;
   min-height: 38rem;
   width: 40%;
+  min-width: 34rem;
   flex-direction: column;
   background: radial-gradient(at top, #1d2633 0%, rgb(23, 30, 40) 50%);
   padding: 3rem;
   border-radius: 3rem;
 }
-.container img {
+.container .star-icon {
   background-color: hsl(213deg, 19%, 18%);
   align-self: flex-start;
   padding: 1rem;
@@ -51,7 +52,23 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.container .rating-container .rating {
+.container button {
+  background-color: hsl(25deg, 97%, 53%);
+  padding: 1.2rem 0;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.container button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: white;
+}
+
+.rating {
   border-radius: 50%;
   background-color: hsl(213deg, 19%, 18%);
   width: 4.5rem;
@@ -66,27 +83,33 @@ body {
   color: hsl(217deg, 12%, 63%);
   transition-duration: 300ms;
 }
-.container .rating-container .rating:hover {
+.rating:hover {
   background-color: hsl(217deg, 12%, 63%);
   color: white;
 }
-.container button {
-  background-color: hsl(25deg, 97%, 53%);
-  padding: 1.2rem 0;
-  border-radius: 2rem;
-  border: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-  transition-duration: 300ms;
+
+.thanks {
+  justify-content: center;
+  align-items: center;
 }
-.container button:hover {
-  color: orange;
-  background-color: white;
+.thanks img {
+  width: 50%;
+}
+.thanks .final-rating {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+}
+.thanks p {
+  text-align: center;
 }
 
-.active {
-  background-color: orange;
+#active {
+  background-color: hsl(25deg, 97%, 53%);
   color: white;
+}
+
+.none {
+  display: none;
 }
