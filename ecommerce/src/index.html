@@ -33,7 +33,14 @@
       <div id="cart-dropdown" class="cart-dropdown  hidden">
         <p>Cart</p>
         <div class="inCart">
-          Your cart is empty. 
+          <p>Your cart is empty.</p>          
+
+          <div class="inCart  hidden">
+            <p>Fall Limited Edition Sneakers</p>  
+            <p class="final-price"></p>
+            <img src="images/icon-delete.svg" alt="">
+          </div>
+
         </div>
       </div>
 
@@ -118,20 +125,23 @@
     <div class="popup-preview  hidden">
 
 
-      <div class="popup-main">
+      <div id="popup-main" class="popup-main">
 
         <img class="close-button" src="images/icon-close.svg" alt="close button">
 
-        <div class="popup-previous-button"></div>
-        <img class="popup-image" src="images/image-product-1.jpg" alt="shoes">
-        <img class="popup-image  hidden" src="images/image-product-2.jpg" alt="shoes">
-        <img class="popup-image  hidden" src="images/image-product-3.jpg" alt="shoes">
-        <img class="popup-image  hidden" src="images/image-product-4.jpg" alt="shoes">
-        <div class="popup-next-button"></div>
+        <div class="flexbox">
+          <div class="popup-previous-button"><img src="images/icon-previous.svg" alt="previous button"></div>
+          <img class="popup-image" src="images/image-product-1.jpg" alt="shoes">
+          <img class="popup-image  hidden" src="images/image-product-2.jpg" alt="shoes">
+          <img class="popup-image  hidden" src="images/image-product-3.jpg" alt="shoes">
+          <img class="popup-image  hidden" src="images/image-product-4.jpg" alt="shoes">
+          <div class="popup-next-button"><img src="images/icon-next.svg" alt="next button"></div>
+        </div>
+
 
       </div>
 
-      <div class="popup-tumbnails">
+      <div id="popup-tumbnail" class="popup-tumbnails">
 
         <img class="popup-tumbnail" src="images/image-product-1-thumbnail.jpg" alt="shoes">
         <img class="popup-tumbnail" src="images/image-product-2-thumbnail.jpg" alt="shoes">
