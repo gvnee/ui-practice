@@ -107,6 +107,7 @@ nav a:last-child:hover{
 .square{
     width: 50%;
 }
+
 .square-text{
     display: flex;
     justify-content: center;
@@ -284,4 +285,10 @@ footer i:hover, footer a:hover{
     .gallery img{
         width: 50%;
     }
+    .square1{ order: 1; }
+    .square2{ order: 4; }
+    .square3{ order: 2; }
+    .square4{ order: 2; }
+    .square5{ order: 5; }
+    .square6{ order: 6; }
 }
